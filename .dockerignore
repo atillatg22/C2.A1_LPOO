@@ -1,0 +1,7 @@
+bin/
+.git/
+.DS_Store
+*.pdf
+.classpath
+.project
+README.md
