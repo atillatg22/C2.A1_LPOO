@@ -69,12 +69,18 @@ public class Main {
 		System.out.println("Total de criaturas derrotadas: " + Criatura.getQuantDerrotadas());
 
 		System.out.println();
+		System.out.println("-".repeat(30));
 		System.out.println("FIM DO PROGRAMA");
+		System.out.println("-".repeat(30));
 		System.out.println("Disciplina: Linguagem de Programação Orientada a Objetos");
+		System.out.println("Professora: Cinthia Cristina Lucio Caliari");
 		System.out.println("Turma: 4SC1");
+		System.out.println();
 		System.out.println("Desenvolvido por:");
 		System.out.println("1. Atilla Tayller Gama da Rocha - 25110254");
 		System.out.println("2. Luiz Henrique Dominicini Becalli Almeida de Faria - 25110553");
-		System.out.println("FAESA 2026");
+		System.out.println();
+		System.out.println("FAESA - 2026");
+		System.out.println("-".repeat(30));
 	}
 }
