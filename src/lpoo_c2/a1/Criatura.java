@@ -46,7 +46,6 @@ public abstract class Criatura {
 			pontosVida = 0;
 		}
 
-		// Contabiliza a criatura uma única vez
 		if (pontosVida == 0) {
 			derrotada = true;
 			quantDerrotadas++;

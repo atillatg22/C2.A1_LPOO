@@ -5,7 +5,6 @@ public class Abrigo {
 	private int defesa;
 	private int pontosVida;
 	private final int maxDefesa;
-	// Vida inicial, usada para recuperar os pontos de vida quando uma defesa é perdida
 	private final int maxPontosVida;
 
 	public Abrigo(int pontosVida, int defesa) {
@@ -34,8 +33,6 @@ public class Abrigo {
 
 		pontosVida -= dano;
 
-		// Enquanto a vida não for positiva e ainda houver defesa,
-		// o abrigo perde uma defesa e recupera a vida inicial
 		while (pontosVida <= 0 && defesa > 0) {
 			defesa--;
 			pontosVida += maxPontosVida;

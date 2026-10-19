@@ -22,8 +22,7 @@ public class Main {
 		while (!criaturas.isEmpty() && !abrigo.estaDestruido()) {
 			System.out.println("========== RODADA " + rodada + " ==========\n");
 
-			// Ataque dos sobreviventes
-			int dano = random.nextInt(16) + 5; // 5 a 20
+			int dano = random.nextInt(16) + 5;
 			Criatura alvo = criaturas.get(random.nextInt(criaturas.size()));
 
 			boolean derrotada = alvo.receberDano(dano);
@@ -43,11 +42,10 @@ public class Main {
 				criaturas.remove(alvo);
 			}
 
-			// Contra-ataque de uma criatura ainda ativa
 			if (!criaturas.isEmpty()) {
 				Criatura atacante = criaturas.get(random.nextInt(criaturas.size()));
 
-				int danoAtaque = atacante.atacar(abrigo); // polimorfismo
+				int danoAtaque = atacante.atacar(abrigo);
 
 				System.out.println(atacante.getClass().getSimpleName() + ": " + atacante.getNome() + " atacou o abrigo!");
 				System.out.println("Dano do ataque: " + danoAtaque);
@@ -69,5 +67,14 @@ public class Main {
 		}
 
 		System.out.println("Total de criaturas derrotadas: " + Criatura.getQuantDerrotadas());
+
+		System.out.println();
+		System.out.println("FIM DO PROGRAMA");
+		System.out.println("Disciplina: Linguagem de Programação Orientada a Objetos");
+		System.out.println("Turma: 4SC1");
+		System.out.println("Desenvolvido por:");
+		System.out.println("1. Atilla Tayller Gama da Rocha - 25110254");
+		System.out.println("2. Luiz Henrique Dominicini Becalli Almeida de Faria - 25110553");
+		System.out.println("FAESA 2026");
 	}
 }
